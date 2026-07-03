@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "nama": "Laptop ASUS",
+    "deskripsi": "Laptop Gaming Ryzen 7",
+    "harga": 12000000,
+    "stok": 5,
+    "gambar": "https://picsum.photos/seed/laptop/200"
+  },
+  {
+    "id": "2",
+    "nama": "Mouse Logitech",
+    "deskripsi": "Mouse Wireless",
+    "harga": 250000,
+    "stok": 20,
+    "gambar": "https://picsum.photos/seed/mouse/200"
+  },
+  {
+    "id": "3",
+    "nama": "Keyboard Mechanical",
+    "deskripsi": "RGB Mechanical Keyboard",
+    "harga": 650000,
+    "stok": 15,
+    "gambar": "https://picsum.photos/seed/keyboard/200"
+  },
+  {
+    "id": "1783057510453",
+    "nama": "Headset Gaming",
+    "deskripsi": "Headset dengan mic noise cancelling",
+    "harga": 350000,
+    "stok": 15,
+    "gambar": ""
+  }
+]

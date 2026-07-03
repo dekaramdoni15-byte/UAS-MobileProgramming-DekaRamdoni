@@ -1,0 +1,27 @@
+name: uas_mobile_programming
+description: "UAS Mobile Programming - Aplikasi Katalog Produk dengan Firebase Auth dan REST API"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Firebase Authentication (Login & Register) - Soal No. 1
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+
+  # HTTP client untuk konsumsi REST API - Soal No. 2
+  http: ^1.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
