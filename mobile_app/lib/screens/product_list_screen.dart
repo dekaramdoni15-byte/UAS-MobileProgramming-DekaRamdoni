@@ -19,6 +19,19 @@ class _ProductListScreenState extends State<ProductListScreen> {
 
   static const _purple = Color(0xFF6D28D9);
 
+  String _formatRupiah(num value) {
+    final str = value.toStringAsFixed(0);
+    final buffer = StringBuffer();
+    for (int i = 0; i < str.length; i++) {
+      final posFromEnd = str.length - i;
+      buffer.write(str[i]);
+      if (posFromEnd > 1 && posFromEnd % 3 == 1) {
+        buffer.write('.');
+      }
+    }
+    return 'Rp ${buffer.toString()}';
+  }
+
   @override
   void initState() {
     super.initState();
@@ -157,7 +170,6 @@ class _ProductListScreenState extends State<ProductListScreen> {
                     padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
                     child: Column(
                       children: [
-                        // Search bar
                         Container(
                           decoration: BoxDecoration(
                             color: Colors.white,
@@ -192,8 +204,6 @@ class _ProductListScreenState extends State<ProductListScreen> {
                           ),
                         ),
                         const SizedBox(height: 14),
-
-                        // Summary cards
                         Row(
                           children: [
                             Expanded(
@@ -221,7 +231,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
                         _summaryCard(
                           icon: Icons.payments_outlined,
                           label: 'Total Nilai Stok',
-                          value: 'Rp ${totalNilai.toStringAsFixed(0)}',
+                          value: _formatRupiah(totalNilai),
                           color: const Color(0xFFEA580C),
                           bg: const Color(0xFFFFF7ED),
                           wide: true,
@@ -422,7 +432,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
                       Row(
                         children: [
                           Text(
-                            'Rp ${product.harga.toStringAsFixed(0)}',
+                            _formatRupiah(product.harga),
                             style: const TextStyle(
                               fontSize: 15,
                               fontWeight: FontWeight.bold,
@@ -497,7 +507,6 @@ class _ProductListScreenState extends State<ProductListScreen> {
   }
 }
 
-// Widget pembungkus untuk animasi fade + slide saat item muncul
 class _AnimatedItem extends StatefulWidget {
   final int index;
   final Widget child;
