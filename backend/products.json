@@ -4,7 +4,7 @@
     "nama": "Laptop ASUS",
     "deskripsi": "Laptop Gaming Ryzen 7",
     "harga": 12000000,
-    "stok": 5,
+    "stok": 10,
     "gambar": "https://picsum.photos/seed/laptop/200"
   },
   {
@@ -29,6 +29,14 @@
     "deskripsi": "Headset dengan mic noise cancelling",
     "harga": 350000,
     "stok": 15,
+    "gambar": ""
+  },
+  {
+    "id": "1783159805469",
+    "nama": "Kursi",
+    "deskripsi": "Untuk duduk dengan nyaman",
+    "harga": 4500000,
+    "stok": 3,
     "gambar": ""
   }
 ]
