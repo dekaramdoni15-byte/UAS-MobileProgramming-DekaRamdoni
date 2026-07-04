@@ -18,6 +18,9 @@ dependencies:
   # HTTP client untuk konsumsi REST API - Soal No. 2
   http: ^1.2.2
 
+  # Untuk memilih foto profil dari galeri
+  image_picker: ^1.0.7
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

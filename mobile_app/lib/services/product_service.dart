@@ -9,7 +9,7 @@ import '../models/product.dart';
 //  - Mac/Linux: buka terminal, ketik "ifconfig" atau "ip addr"
 // Pastikan HP/emulator dan laptop terhubung ke WiFi yang SAMA.
 class ProductService {
-static const String baseUrl = "http://192.168.1.7:3000/api/products";
+static const String baseUrl = "http://localhost:3000/api/products";
   // GET semua produk
   Future<List<Product>> getProducts() async {
     final response = await http.get(Uri.parse(baseUrl));
